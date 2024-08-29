@@ -830,6 +830,12 @@ impl Chunk {
         self.num_rows() == 0
     }
 
+    // TODO
+    #[inline]
+    pub fn row_ids_raw_for_real(&self) -> &ArrowStructArray {
+        &self.row_ids
+    }
+
     /// Returns the [`RowId`]s in their raw-est form: a tuple of (times, counters) arrays.
     #[inline]
     pub fn row_ids_raw(&self) -> (&ArrowPrimitiveArray<u64>, &ArrowPrimitiveArray<u64>) {
@@ -1002,6 +1008,12 @@ impl TimeColumn {
             .iter()
             .copied()
             .map(TimeInt::new_temporal)
+    }
+
+    // TODO
+    #[inline]
+    pub fn times_raw_for_real(&self) -> &ArrowPrimitiveArray<i64> {
+        &self.times
     }
 
     #[inline]
