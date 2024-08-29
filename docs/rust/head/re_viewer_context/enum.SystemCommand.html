@@ -3,8 +3,8 @@
 <details class="toggle type-contents-toggle"><summary class="hideme"><span>Show 18 variants</span></summary>    ActivateApp(ApplicationId),
     CloseApp(ApplicationId),
     LoadDataSource(<a class="enum" href="../re_data_source/data_source/enum.DataSource.html" title="enum re_data_source::data_source::DataSource">DataSource</a>),
-    ClearSourceAndItsStores(SmartChannelSource),
-    AddReceiver(Receiver&lt;LogMsg&gt;),
+    ClearSourceAndItsStores(<a class="enum" href="../re_smart_channel/enum.SmartChannelSource.html" title="enum re_smart_channel::SmartChannelSource">SmartChannelSource</a>),
+    AddReceiver(<a class="struct" href="../re_smart_channel/receiver/struct.Receiver.html" title="struct re_smart_channel::receiver::Receiver">Receiver</a>&lt;LogMsg&gt;),
     ResetViewer,
     ClearActiveBlueprint,
     ClearAndGenerateBlueprint,
@@ -22,8 +22,8 @@
 </div></details><h2 id="variants" class="variants section-header">Variants<a href="#variants" class="anchor">§</a></h2><div class="variants"><section id="variant.ActivateApp" class="variant"><a href="#variant.ActivateApp" class="anchor">§</a><h3 class="code-header">ActivateApp(ApplicationId)</h3></section><div class="docblock"><p>Make this the active application.</p>
 </div><section id="variant.CloseApp" class="variant"><a href="#variant.CloseApp" class="anchor">§</a><h3 class="code-header">CloseApp(ApplicationId)</h3></section><div class="docblock"><p>Close this app and all its recordings.</p>
 </div><section id="variant.LoadDataSource" class="variant"><a href="#variant.LoadDataSource" class="anchor">§</a><h3 class="code-header">LoadDataSource(<a class="enum" href="../re_data_source/data_source/enum.DataSource.html" title="enum re_data_source::data_source::DataSource">DataSource</a>)</h3></section><div class="docblock"><p>Load some data.</p>
-</div><section id="variant.ClearSourceAndItsStores" class="variant"><a href="#variant.ClearSourceAndItsStores" class="anchor">§</a><h3 class="code-header">ClearSourceAndItsStores(SmartChannelSource)</h3></section><div class="docblock"><p>Clear everything that came from this source, and close the source.</p>
-</div><section id="variant.AddReceiver" class="variant"><a href="#variant.AddReceiver" class="anchor">§</a><h3 class="code-header">AddReceiver(Receiver&lt;LogMsg&gt;)</h3></section><section id="variant.ResetViewer" class="variant"><a href="#variant.ResetViewer" class="anchor">§</a><h3 class="code-header">ResetViewer</h3></section><div class="docblock"><p>Reset the <code>Viewer</code> to the default state</p>
+</div><section id="variant.ClearSourceAndItsStores" class="variant"><a href="#variant.ClearSourceAndItsStores" class="anchor">§</a><h3 class="code-header">ClearSourceAndItsStores(<a class="enum" href="../re_smart_channel/enum.SmartChannelSource.html" title="enum re_smart_channel::SmartChannelSource">SmartChannelSource</a>)</h3></section><div class="docblock"><p>Clear everything that came from this source, and close the source.</p>
+</div><section id="variant.AddReceiver" class="variant"><a href="#variant.AddReceiver" class="anchor">§</a><h3 class="code-header">AddReceiver(<a class="struct" href="../re_smart_channel/receiver/struct.Receiver.html" title="struct re_smart_channel::receiver::Receiver">Receiver</a>&lt;LogMsg&gt;)</h3></section><section id="variant.ResetViewer" class="variant"><a href="#variant.ResetViewer" class="anchor">§</a><h3 class="code-header">ResetViewer</h3></section><div class="docblock"><p>Reset the <code>Viewer</code> to the default state</p>
 </div><section id="variant.ClearActiveBlueprint" class="variant"><a href="#variant.ClearActiveBlueprint" class="anchor">§</a><h3 class="code-header">ClearActiveBlueprint</h3></section><div class="docblock"><p>Reset the <code>Blueprint</code> to the default state</p>
 </div><section id="variant.ClearAndGenerateBlueprint" class="variant"><a href="#variant.ClearAndGenerateBlueprint" class="anchor">§</a><h3 class="code-header">ClearAndGenerateBlueprint</h3></section><div class="docblock"><p>Clear the blueprint and generate a new one</p>
 </div><section id="variant.ActivateRecording" class="variant"><a href="#variant.ActivateRecording" class="anchor">§</a><h3 class="code-header">ActivateRecording(StoreId)</h3></section><div class="docblock"><p>If this is a recording, switch to it.</p>

@@ -62,11 +62,11 @@ then falling back to the placeholder value registered in the viewer context.</di
 ) -&gt; QueryRange</h4></section></summary><div class='docblock'>Default query range for this space view.</div></details><details class="toggle method-toggle" open><summary><section id="method.recommended_root_for_entities" class="method trait-impl"><a href="#method.recommended_root_for_entities" class="anchor">§</a><h4 class="code-header">fn <a class="fn">recommended_root_for_entities</a>(
     &amp;self,
     _entities: &amp;<a class="struct" href="https://doc.rust-lang.org/1.76.0/std/collections/hash/set/struct.HashSet.html" title="struct std::collections::hash::set::HashSet">HashSet</a>&lt;EntityPath, <a class="struct" href="https://doc.rust-lang.org/1.76.0/core/hash/struct.BuildHasherDefault.html" title="struct core::hash::BuildHasherDefault">BuildHasherDefault</a>&lt;NoHashHasher&lt;EntityPath&gt;&gt;&gt;,
-    _entity_db: &amp;<a class="struct" href="../../re_entity_db/entity_db/struct.EntityDb.html" title="struct re_entity_db::entity_db::EntityDb">EntityDb</a>
+    _entity_db: &amp;EntityDb
 ) -&gt; <a class="enum" href="https://doc.rust-lang.org/1.76.0/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;EntityPath&gt;</h4></section></summary><div class='docblock'>Determines a suitable origin given the provided set of entities. <a>Read more</a></div></details><details class="toggle method-toggle" open><summary><section id="method.visualizable_filter_context" class="method trait-impl"><a href="#method.visualizable_filter_context" class="anchor">§</a><h4 class="code-header">fn <a class="fn">visualizable_filter_context</a>(
     &amp;self,
     _space_origin: &amp;EntityPath,
-    _entity_db: &amp;<a class="struct" href="../../re_entity_db/entity_db/struct.EntityDb.html" title="struct re_entity_db::entity_db::EntityDb">EntityDb</a>
+    _entity_db: &amp;EntityDb
 ) -&gt; <a class="struct" href="https://doc.rust-lang.org/1.76.0/alloc/boxed/struct.Box.html" title="struct alloc::boxed::Box">Box</a>&lt;dyn VisualizableFilterContext&gt;</h4></section></summary><div class='docblock'>Create context object that is passed to all of this classes visualizers
 to determine whether they can be visualized <a>Read more</a></div></details><details class="toggle method-toggle" open><summary><section id="method.on_frame_start" class="method trait-impl"><a href="#method.on_frame_start" class="anchor">§</a><h4 class="code-header">fn <a class="fn">on_frame_start</a>(
     &amp;self,
